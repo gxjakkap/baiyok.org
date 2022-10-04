@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="author" content="Sriwataporn Kongdam">
     <meta name="generator" content="Hugo 0.104.2">
-    <title>Home - Baiyok</title>
+    <title>Baiyok</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css"
         integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -88,6 +88,7 @@
         <main class="px-3">
             <img class="rounded-circle pfimg" src="assets/by.webp">
             <h1>Sriwataporn Kongdam</h1>
+            <h2>(<span id="typewriter"></span>)</h2>
             <p class="lead">เดี๋ยวมาเขียนเดี๋ยวมาเขียนเดี๋ยวมาเขียนเดี๋ยวมาเขียนเดี๋ยวมาเขียนเดี๋ยวมาเขียนเดี๋ยวมาเขียน
             </p>
             <p class="lead">
@@ -110,6 +111,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js"
         integrity="sha512-BOsvKbLb0dB1IVplOL9ptU1EYA+LuCKEluZWRUYG73hxqNBU85JBIBhPGwhQl7O633KtkjMv8lvxZcWP+N3V3w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.19.0/core.min.js"
+        integrity="sha512-t4NGjfaRaGCjmiTGBsiG3w8FCp8ZY7dPlwZAXfeoGPARUT/rt3OP0NpQkblSgZy/2R8vPTXiEcq/zcWIJ8NusQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let text = document.getElementById('typewriter')
+
+        const typewriter = new Typewriter(text, {
+            loop: true
+        })
+
+        typewriter.typeString('Baiyok')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('Yok')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('Boryor')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('Noomnum')
+            .pauseFor(1000)
+            .deleteAll()
+            .start()
+    </script>
 </body>
 
 </html>
