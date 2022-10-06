@@ -1,6 +1,3 @@
-import { FunctionComponent } from "react";
-import type  NextFunctionComponent from 'next/types'
-
 type Props = {
     title: string,
     message: string
@@ -13,7 +10,7 @@ const Modal = (props: Props) => {
             <label htmlFor="my-modal-4" className="modal cursor-pointer">
                 <label className="modal-box relative" htmlFor="">
                     <h3 className="text-lg font-bold">{props.title}</h3>
-                    <p className="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+                    <p className="py-4">PlaceHolder</p>
                 </label>
             </label>
         </>
