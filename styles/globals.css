@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cover-container {
+    @apply max-w-[42em];
+}
+
+body {
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+h1, .h1 {
+    font-size: calc(1.375rem + 1.5vw);
+}
+@media (min-width: 1200px) {
+    h1, .h1 {
+        font-size: 2.5rem;
+    }
+}
+
+h2, .h2 {
+    font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+    h2, .h2 {
+        font-size: 2rem;
+    }
+}
+
+h3, .h3 {
+    font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+    h3, .h3 {
+        font-size: 1.75rem;
+    }
+}
+
+h4, .h4 {
+    font-size: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+    h4, .h4 {
+        font-size: 1.5rem;
+    }
+}
+
+h5, .h5 {
+    font-size: 1.25rem;
+    }
+
+h6, .h6 {
+    font-size: 1rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.text-bg-dark {
+    color: #fff !important;
+    background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
+}
