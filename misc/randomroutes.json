@@ -1,0 +1,12 @@
+[
+    {
+        "path": "/random/int",
+        "name": "Random Number Generator",
+        "description": "True Random Generated number picked from your choice of range."
+    },
+    {
+        "path": "/random/picker",
+        "name": "Picker",
+        "description": "True-Randomly pick one of the choice of your input. Great for picking someone to answer your question in the classroom."
+    }
+]
