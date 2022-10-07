@@ -36,9 +36,9 @@ const RandomHome: NextPage = ({dataArray} : InferGetStaticPropsType<typeof getSt
                 <main className="px-3">
                     <h1>Baiyok&apos;s Random</h1>
                     <div className="container mx-auto">
-                        {dataArray.map((data: GridData) => {
+                        {dataArray.map((data: GridData, index: number) => {
                             return (
-                                <div className="card w-50 bg-base-100 ml-auto mr-auto shadow-xl">
+                                <div key={index} className="card w-50 bg-base-100 ml-auto mr-auto shadow-xl">
                                     <div className="card-body">
                                         <h2 className="card-title">{data.name}</h2>
                                         <p className='text-left'>{data.description}</p>
