@@ -21,7 +21,6 @@ const Picker: NextPage = () => {
     const getRandomNumber = async (min: Number, max: Number) => {
         const rs = await fetch(`https://www.random.org/integers/?num=1&min=${min}&max=${max}&col=1&base=10&format=plain&rnd=new`)
         const rst = await rs.text()
-        console.log(rs)
         return parseInt(rst)
     }
 
