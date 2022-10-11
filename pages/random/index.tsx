@@ -7,7 +7,7 @@ import Header from '../../components/header'
 import { join } from 'path'
 import { fetchJSON } from '../../lib/json'
 
-const routefile = join(process.cwd(), 'misc', 'randomroutes.json')
+const routefile = join(process.cwd(), 'lib', 'randomroutes.json')
 
 type GridData = {path: string, name: string, description: string}
 
