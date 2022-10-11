@@ -5,7 +5,7 @@ import process from 'process'
 import Footer from '../../components/footer'
 import Header from '../../components/header'
 import { join } from 'path'
-import { fetchJSON } from '../../misc/json'
+import { fetchJSON } from '../../lib/json'
 
 const routefile = join(process.cwd(), 'misc', 'randomroutes.json')
 
